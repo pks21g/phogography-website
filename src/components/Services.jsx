@@ -28,8 +28,8 @@ function Services() {
         </div>
         <div className="outdoor-adventure">
           <div className="adventure-item">
-            <h1 className="heading-title">OutDoor</h1>
-            <h1 className="heading-title">Adventure</h1>
+            <h1 className="heading-title adv">OutDoor</h1>
+            <h1 className="heading-title adv">Adventure</h1>
           </div>
           <div className="images">
             <img src={omainImage} alt="" className="mainImage" />
