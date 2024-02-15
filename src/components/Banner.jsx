@@ -7,7 +7,7 @@ function Banner() {
   return (
     <div className="banner-video">
       <div className="overlay"></div>
-      <video id="videospeed" src={bgvideo} autoPlay loop muted />
+      <video id="videospeed" src={bgvideo} autoPlay loop muted playsInline />
       <div className="logoname">
         <h1>Prestige Photography</h1>
         <hr />
