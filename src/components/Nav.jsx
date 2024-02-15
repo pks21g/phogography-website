@@ -5,10 +5,10 @@ function Nav() {
   return (
     <div className='navigation'>
       <ul className='navigation-menu'>
-        <Link to="/home">Home</Link>
-        <Link to="/home/services">Service</Link>
-        <Link to="/home/protfolio">Protfolio</Link>
-        <Link to="/home/contact">Contact</Link>
+        <Link to="/photography-website">Home</Link>
+        <Link to="/photography-website/services">Service</Link>
+        <Link to="/photography-website/protfolio">Protfolio</Link>
+        <Link to="/photography-website/contact">Contact</Link>
       </ul>
     </div>
   )
