@@ -12,7 +12,17 @@ body,
   justify-content: space-between;
 }
 .footer {
-  margin: auto;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap:3px;
+}
+.footer p{
+  font-size: 1.1rem;
+  color:rgb(160, 160, 159)
 }
 
 body {
@@ -28,7 +38,7 @@ body {
   left: 0;
   z-index: 10000;
   padding: 0 40px;
-  background-color: rgba(0,0,0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navigation-menu {
@@ -274,54 +284,95 @@ img {
   justify-content: space-between;
 }
 /* contact */
-.contact{
+.contact {
   min-height: 100svh;
+  width: 100svw;
   background: url("https://source.unsplash.com/a-camera-lens-on-a-black-background-pnyQR_78cFg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contact-overlay{
+/* .contact-overlay{
   height:100%;
   width:100%;
   position: absolute;
   top:0;
+  left:0;
   background-color: rgba(107, 106, 105, 0.2);
   z-index: 1;
 
+} */
+.contact-message {
+  /* background-color: rgba(90, 75, 46, .9); */
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  line-height: 1.6;
+  border-bottom: 1px solid white;
 }
 /* form */
-.contact{
+/* .contact{
   padding:100px;
-}
+} */
 .form {
+  /* background-color: rgba(90, 75, 46, .5); */
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 100;
+  padding: 50px 0;
 }
-.input-group{
+.input-group {
   display: flex;
   flex-direction: column;
 }
-label{
-  color:#fff;
+label {
+  color: #fff;
 }
-input, button, textarea{
+input,
+button,
+textarea {
   font-size: 1.4rem;
   outline: none;
-  padding:5px 0;
-  width:400px;
+  padding: 5px 0;
+  width: 400px;
   margin-bottom: 10px;
+  border: none;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
-.error{
-  color:red;
+input::placeholder {
+  color: white;
 }
-button{
-  margin-top: 5px;
+.error {
+  color: red;
+}
+button {
+  margin-top: 15px;
+  background: transparent;
+  border: 1px solid rgba(241, 235, 228, 1);
+  color: rgba(241, 235, 228, 1);
+  cursor: pointer;
+}
+button:hover {
+  color: black;
+  background: #fff;
+}
+
+hr{
+  border: 1px solid rgb(0, 0, 0, .2);
+  width:100%;
 }
 @media (max-width: 450px) {
   .navigation-menu {
@@ -392,6 +443,15 @@ button{
   .right {
     width: 100%;
   }
+  input,
+  button,
+  textarea {
+    font-size: 1.4rem;
+    outline: none;
+    padding: 5px 0;
+    width: 350px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -414,4 +474,5 @@ button{
   .lastImage {
     top: -60px;
   }
+  
 }

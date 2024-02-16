@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 
 function Contact() {
@@ -9,21 +8,42 @@ function Contact() {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    // data="";
+    console.log(data)
   };
 
   return (
     <div className="contact">
       <div className="contact-overlay"></div>
+      <div className="contact-message">
+        <span>If you are here,</span>
+        <span>I presume, you have already seen my work</span>
+        <span>a little bit.</span>
+        <span>Now its time to get in touch!!</span>
+      </div>
       <form onSubmit={handleSubmit(onSubmit)} className="form">
         <div className="input-group">
-          <label>Full Name</label>
+          <label>Full Name*</label>
           <input type="text" {...register("name", { required: true })} />
-          {errors.name && <p className="error">Name is required and must be valid</p>}
+          {errors.name && (
+            <p className="error">Name is required and must be valid</p>
+          )}
         </div>
         <div className="input-group">
-          <label>Message</label>
-          <textarea type="text" cols={35} rows={5} {...register("message", { required: true })} />
+          <label>Email*</label>
+          <input type="email" {...register("email", { required: true })} />
+          {errors.email && (
+            <p className="error">Email is required and must be valid</p>
+          )}
+        </div>
+        <div className="input-group">
+          <label>Message*</label>
+          <textarea
+            type="text"
+            cols={35}
+            rows={5}
+            {...register("message", { required: true })}
+          />
           {errors.message && <p className="error">Message is required</p>}
         </div>
 
