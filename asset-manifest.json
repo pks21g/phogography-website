@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/photography-website/static/css/main.2b8e1b46.css",
-    "main.js": "/photography-website/static/js/main.a876f1f0.js",
+    "main.css": "/photography-website/static/css/main.eff42d33.css",
+    "main.js": "/photography-website/static/js/main.98f6a920.js",
     "static/js/592.7b269c09.chunk.js": "/photography-website/static/js/592.7b269c09.chunk.js",
     "static/media/background-sony.mp4": "/photography-website/static/media/background-sony.556800bed9153608a97c.mp4",
+    "static/media/logo.png": "/photography-website/static/media/logo.b2c179be9247f713f52a.png",
     "index.html": "/photography-website/index.html",
-    "main.2b8e1b46.css.map": "/photography-website/static/css/main.2b8e1b46.css.map",
-    "main.a876f1f0.js.map": "/photography-website/static/js/main.a876f1f0.js.map",
+    "main.eff42d33.css.map": "/photography-website/static/css/main.eff42d33.css.map",
+    "main.98f6a920.js.map": "/photography-website/static/js/main.98f6a920.js.map",
     "592.7b269c09.chunk.js.map": "/photography-website/static/js/592.7b269c09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b8e1b46.css",
-    "static/js/main.a876f1f0.js"
+    "static/css/main.eff42d33.css",
+    "static/js/main.98f6a920.js"
   ]
 }
