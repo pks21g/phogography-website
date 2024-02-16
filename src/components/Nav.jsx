@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 function Nav() {
   return (
     <div className="navigation">
+      <img src={logo} alt="" />
       <ul className="navigation-menu">
         <Link to="/photography-website">Home</Link>
         <Link to="/photography-website/services">Service</Link>

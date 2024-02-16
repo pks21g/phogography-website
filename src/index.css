@@ -37,8 +37,22 @@ body {
   top: 0;
   left: 0;
   z-index: 10000;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
   padding: 0 40px;
+  padding-left: 0;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation img {
+  width:20%;
+  height: 100%;
+  object-fit: contain;
+  background-color: rgb(209, 204, 204);
+  /* transform: rotate(-90deg); */
+  padding: 10px;
+  
 }
 
 .navigation-menu {
@@ -455,6 +469,10 @@ hr{
 }
 
 @media (max-width: 390px) {
+  .navigation{
+    padding:0 10px;
+    padding-left: 0;
+  }
   .logoname h1 {
     font-size: 2.3rem;
   }
