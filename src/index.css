@@ -5,6 +5,15 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+.App {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer {
+  margin: auto;
+}
 
 body {
   background-color: rgba(241, 235, 228, 1);
@@ -14,12 +23,12 @@ body {
 .navigation {
   width: 100%;
   height: 70px;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 10000;
   padding: 0 40px;
-  /* background-color: rgba(241, 235, 228, 1); */
+  background-color: rgba(0,0,0, .8);
 }
 
 .navigation-menu {
@@ -33,15 +42,15 @@ body {
 
 a {
   cursor: pointer;
-  /* color: rgb(135, 133, 133); */
+  color: rgb(163, 162, 162);
   text-decoration: none;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(156, 154, 154);
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(156, 154, 154); */
 }
 
 /* banner/hero */
 .banner-video {
-  position: relative;
+  /* position: relative; */
   width: 100svw;
   height: 100svh;
 }
@@ -97,12 +106,38 @@ video {
   padding: 100px 0;
   height: auto;
 }
-.wedding .outdoor-adventure {
+.message {
+  width: 100%;
+  color: rgba(90, 75, 46, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 0 20px;
+  gap: 20px;
+}
+.message h4 {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.message p {
+  max-width: 600px;
+  /* min-width: 300px; */
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.wedding .outdoor-adventure,
+.event {
   position: relative;
   height: auto;
 }
 .wedding-item,
-.adventure-item {
+.adventure-item,
+.event-item {
   width: 100svw;
   position: absolute;
   z-index: 100;
@@ -114,6 +149,10 @@ video {
   font-size: 1.5rem;
   padding: 30px 0;
   height: auto;
+}
+
+.event-item {
+  color: black;
 }
 .heading {
   display: flex;
@@ -144,7 +183,11 @@ img {
   justify-content: center;
   align-items: center;
 }
-
+.images .event {
+  width: 30%;
+  height: 100%;
+  bottom: -100px;
+}
 .mainImage {
   margin: auto;
   width: 60%;
@@ -165,6 +208,7 @@ img {
   top: -10px;
 }
 
+/* portfolio */
 .portfolio {
   display: flex;
   /* gap:30px; */
@@ -205,10 +249,96 @@ img {
   /* padding: 100px 0; */
   justify-content: space-around;
 }
+/* outdoor */
+.outdoor {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 0 40px;
+  margin-top: 100px;
+}
+.left {
+  width: 40%;
+}
+.left p,
+.right p {
+  margin-bottom: 30px;
+}
+.right {
+  width: 55%;
+}
 
+.outdoortop,
+.outdoorbottom {
+  display: flex;
+  justify-content: space-between;
+}
+/* contact */
+.contact{
+  min-height: 100svh;
+  background: url("https://source.unsplash.com/a-camera-lens-on-a-black-background-pnyQR_78cFg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-overlay{
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0;
+  background-color: rgba(107, 106, 105, 0.2);
+  z-index: 1;
+
+}
+/* form */
+.contact{
+  padding:100px;
+}
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+.input-group{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  color:#fff;
+}
+input, button, textarea{
+  font-size: 1.4rem;
+  outline: none;
+  padding:5px 0;
+  width:400px;
+  margin-bottom: 10px;
+}
+.error{
+  color:red;
+}
+button{
+  margin-top: 5px;
+}
 @media (max-width: 450px) {
-  .navigation-menu{
+  .navigation-menu {
     justify-content: center;
+  }
+
+  .message h4 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .message p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-transform: uppercase;
   }
   .logoname h1 {
     font-size: 2.5rem;
@@ -247,6 +377,21 @@ img {
   .wPics {
     gap: 30px;
   }
+  .outdoor {
+    padding: 0;
+    gap: 0;
+    margin-top: 30px;
+  }
+  .outdoortop,
+  .outdoorbottom {
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
 }
 
 @media (max-width: 390px) {
@@ -269,5 +414,4 @@ img {
   .lastImage {
     top: -60px;
   }
-  
 }

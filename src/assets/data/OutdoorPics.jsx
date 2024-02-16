@@ -1,0 +1,7 @@
+export const outdoor1 = "https://source.unsplash.com/man-walking-under-cave-during-daytime-BHfM4NDaz9U"
+export const outdoor2 = "https://source.unsplash.com/man-on-grass-field-looking-at-sky-JrZ1yE1PjQ0"
+export const outdoor3 = "https://source.unsplash.com/trees-surrounded-by-body-of-water-08wxrVv5rp8"
+export const outdoor4 = "https://source.unsplash.com/woman-sitting-near-body-of-water-looking-at-clouds-umycmizZHn8"
+export const outdoor5 = "https://source.unsplash.com/brown-wooden-bench-beside-tree-b9drVB7xIOI"
+export const outdoor6 = "https://source.unsplash.com/a-man-standing-on-top-of-a-mountain-next-to-a-lake-8af0T0acYa0"
+export const bgimage = "https://source.unsplash.com/a-man-and-woman-sitting-on-a-beach-with-a-city-skyline-in-the-background-RnYjjJ5yUlQ"

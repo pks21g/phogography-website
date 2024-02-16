@@ -1,3 +1,5 @@
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
@@ -12,8 +14,9 @@ function App() {
         <Route path="/photography-website" element={<Home />} />
         <Route path="/photography-website/services" element={<Services />} />
         <Route path="photography-website/portfolio" element={<Portfolio/>} />
+        <Route path="photography-website/contact" element={<Contact/>} />
       </Routes>
-      {/* <Home /> */}
+      <Footer />
     </div>
   );
 }
