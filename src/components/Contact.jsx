@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useCallback } from "react";
 
 function Contact() {
   const {
@@ -7,10 +8,7 @@ function Contact() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    // data="";
-    console.log(data)
-  };
+  const onSubmit = (data) => {};
 
   return (
     <div className="contact">

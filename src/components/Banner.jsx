@@ -1,9 +1,8 @@
 import React from "react";
 import bgvideo from "../assets/background-sony.mp4";
+import { Link } from "react-router-dom";
 
 function Banner() {
-  // const pspeed = document.getElementById("videospeed");
-  // pspeed.playbackRate = 2;
   return (
     <div className="banner-video">
       <div className="overlay"></div>
@@ -12,7 +11,9 @@ function Banner() {
         <h1>Prestige Photography</h1>
         <hr />
         <p>Photography for all needs</p>
+        <Link to='/photography-website/contact' className="book">Book a Consultation</Link>
       </div>
+      
     </div>
   );
 }
