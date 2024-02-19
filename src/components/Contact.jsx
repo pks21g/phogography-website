@@ -1,14 +1,26 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  const [message, setMessage] = useState("");
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
-  const onSubmit = (data) => {};
+  const onSubmit = (data, e) => {
+    e.preventDefault();
+    setMessage(
+      `Thank you for contacting ${data.name}!!\nWe will be in touch shortly.`
+    );
+    setTimeout(() => {
+      reset();
+    }, 2000);
+  };
 
   return (
     <div className="contact">
@@ -19,7 +31,12 @@ function Contact() {
         <span>a little bit.</span>
         <span>Now its time to get in touch!!</span>
       </div>
+      <div className="msg">
+        <p>{message}</p>
+      </div>
       <form onSubmit={handleSubmit(onSubmit)} className="form">
+        {/* {message} */}
+
         <div className="input-group">
           <label>Full Name*</label>
           <input type="text" {...register("name", { required: true })} />
